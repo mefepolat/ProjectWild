@@ -12,6 +12,16 @@ export async function index(req,res){
 
 
 export async function championDetails(req,res){
-
-    res.render('details.ejs', {championList})
+    const {name} = req.params;
+    const trimmed = name.replace(' ','');
+    let champion;
+    if(championList.data[trimmed] === undefined){
+      return res.redirect('/champions');
+    }else {
+      champion = championList.data[trimmed];
+      console.log(champion)
+      res.render('details.ejs', {champion})
+    }
+    
+    
 }
