@@ -8,9 +8,9 @@
         
 
         <div class="champion">
-       <img class="champion_icon" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/<%= champion.key %>.png" alt="">
-
-        <p class="champion_name"><%= champion.name %> </p>
+       <a href="/champions/<%= champion.name %>"><img class="champion_icon" src="https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-icons/<%= champion.key %>.png" alt=""></a> 
+       
+       <a class="champion_name" href="/champions/<%= champion.name %>"><%= champion.name %></a>
         </div>
     
             <% })  %> 
