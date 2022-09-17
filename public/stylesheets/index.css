@@ -1,15 +1,29 @@
-/* .container {
-    margin: 0 auto;
-    display: grid;
-    gap: 20em;
+
+
+.champion_icon {
+    width: 5rem;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
-.champion {
-    width: 5em;
-    grid-row: 1 / 3;
-    row-gap: 1em;
-    grid-column: 2 / 4;
-    column-gap: 2rem;
-    position:fixed
+.container {
+    margin: 2em auto;
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction:row;
+    flex-wrap: wrap;
+    border: 2px solid #777766;
+    padding: 1em;
 }
- */
+
+.champion_name {
+    text-align: center;
+    display: block;
+    padding: auto;
+    color: #7A7A65;
+    text-decoration: none;
+} 
+
+
