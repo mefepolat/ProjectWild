@@ -3,7 +3,10 @@
 .champion_icon {
     width: 5rem;
     margin-left: 0.5em;
+    border: 0.1em solid #7A7A65;
     margin-right: 0.5em;
+    border-radius: 0.3em;
+    
 }
 
 .container {
@@ -21,9 +24,16 @@
 .champion_name {
     text-align: center;
     display: block;
-    padding: auto;
     color: #7A7A65;
     text-decoration: none;
+    margin: 0.5em auto;
 } 
+
+.champion_icon:hover{
+    transition: all;
+    color: #937341;
+    opacity: 0.8;
+    outline: 1px solid #937341;
+}
 
 

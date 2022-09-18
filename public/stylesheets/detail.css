@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px #7A7A65 solid;
+    height: 50vh;
+    min-width: 60%;
+    max-width: 55vh;
+    margin: 25vh auto;
+    border-radius: 1em;
+}
+
+.champion-info{
+    justify-content: flex-end;
+    border: 1px solid #7A7A65;
+    flex-wrap: wrap;
+}
+
+.champ-blurb{
+    text-align: center;
+    color: #7A7A65;
+    width: 35vh;
+    padding: 1em;
+    border-bottom: #7A7A65 2px solid;
+}
+
+.champion-title {
+    align-items: center;
+}
+
+.champ-portrait{
+    color: #7A7A65;
+    font-weight: bold;
+    width: 33vh;
+    max-width: 50vh;
+    min-width: 25vh;
+    height: 25vh;
+    border-bottom: 2px #7A7A65 solid;
+    border-right: 2px #7A7A65 solid;
+    border-left: 2px #7A7A65 solid;
+    padding: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.champion-splash {
+    width: 18vh;
+    border: 2px #7A7A65 solid;
+    border-radius: 2em;
+    flex-wrap: wrap;
+}

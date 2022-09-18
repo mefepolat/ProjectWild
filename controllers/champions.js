@@ -13,14 +13,21 @@ export async function index(req,res){
 
 export async function championDetails(req,res){
     const {name} = req.params;
-    const trimmed = name.replace(' ','');
+    let trimmed = name.replaceAll(' ','');
+    if(trimmed == 'Nunu&Willump'){
+      trimmed = 'Nunu';
+    } else if(trimmed == 'Wukong'){
+      trimmed = 'MonkeyKing'
+    }
     let champion;
+    console.log(Object.keys(championList.data[trimmed]))
     if(championList.data[trimmed] === undefined){
       return res.redirect('/champions');
     }else {
       champion = championList.data[trimmed];
-      console.log(champion)
-      res.render('details.ejs', {champion})
+      const fileName = champion.key.toString().padEnd(champion.key.length + 3, '000')
+      const imgSrc = `https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-tiles/${champion.key}/${fileName}.jpg`
+      res.render('details.ejs', {champion, imgSrc})
     }
     
     

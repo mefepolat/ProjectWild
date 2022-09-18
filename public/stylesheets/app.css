@@ -1,5 +1,9 @@
+@font-face {
+    font-family: 'spiegel';
+    src: url('../assets/fonts/spiegel.ttf');
+}
 body{
-    
+    font-family: 'spiegel', sans-serif;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("https://i.imgur.com/2aiQhYv.jpg");
     background-size: cover;

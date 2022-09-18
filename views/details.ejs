@@ -1,8 +1,24 @@
 <% layout('layouts/boilerplate.ejs') %> 
 
+<link rel="stylesheet" href="/stylesheets/detail.css">
 
 <div class="container">
 
-    <img src="" alt="" class="champion-splash">
+    <div class="grid">
+
+    <div class="champ-portrait">
+    <img src="<%= imgSrc %>" alt="" class="champion-splash"> 
+    <p class="champion-title"> <%= champion.name %> </p>
+    <p class="champion-title"><%= champion.title %> </p>
+    </div>
     
+    <div class="champ-info">
+        <p class="champ-blurb"><%= champion.blurb %> </p>
+    </div>
+
 </div>
+</div>
+
+
+
+
