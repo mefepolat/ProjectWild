@@ -21,13 +21,18 @@ export async function championDetails(req,res){
       trimmed = 'MonkeyKing'
     }
     let champion;
+    let championDetails;
     if(championList.data[trimmed] === undefined){
       return res.redirect('/champions');
     }else {
       champion = championList.data[trimmed];
-      const championData = await getChampion(champion.key);
+      
+      const championData = await getChampion(champion.name);
+      championDetails = championData[trimmed];
       const imgSrc = getChampionImage(champion.key);
-      res.render('details.ejs', {champion, imgSrc, championData})
+      console.log(championDetails.spells)
+
+      res.render('details.ejs', {champion, imgSrc, championDetails})
     }
     
     

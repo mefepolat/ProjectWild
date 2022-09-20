@@ -1,55 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    color: #7A7A65;
+    
+}
+
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    flex-flow: row nowrap;
     border: 3px #7A7A65 solid;
-    height: 50vh;
+    height: 55vh;
+    width: 90%;
+    max-height: 100vh;
     min-width: 60%;
-    max-width: 55vh;
     margin: 25vh auto;
     border-radius: 1em;
-}
-
-.champion-info{
-    justify-content: flex-end;
-    border: 1px solid #7A7A65;
-    flex-wrap: wrap;
-}
-
-.champ-blurb{
-    text-align: center;
-    color: #7A7A65;
-    width: 35vh;
-    padding: 1em;
-    border-bottom: #7A7A65 2px solid;
-}
-
-.champion-title {
-    align-items: center;
+   
 }
 
 .champ-portrait{
     color: #7A7A65;
     font-weight: bold;
-    width: 33vh;
-    max-width: 50vh;
-    min-width: 25vh;
-    height: 25vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 34%;
+   height: 85%;
     border-bottom: 2px #7A7A65 solid;
     border-right: 2px #7A7A65 solid;
     border-left: 2px #7A7A65 solid;
     padding: 1em;
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
+    min-width: 0;
+    min-height: 0;
+}
+
+.champion-splash {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 15vh;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px #7A7A65 solid;
+    border-radius: 2em;
+    flex: 1;
+}
+
+.champion-title{
+    border-bottom: #7A7A65 2px solid;
+    margin: 0 0 ;
+    padding: 1em;
+    height: auto;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.champ-spells{
+    width: 33%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.spell-icon{
+    width: 2.5rem;
+    display: flex;
+    border: #7A7A65 2px solid;
+}
+
+.spell-icon:hover{
+    cursor: pointer;
+    transition: all;
+    color: #937341;
+    opacity: 0.8;
+    outline: 1px solid #937341;
+}
+
+.champ-spells p{
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.champion-splash {
-    width: 18vh;
-    border: 2px #7A7A65 solid;
-    border-radius: 2em;
-    flex-wrap: wrap;
+.champ-blurb{
+    text-align: center;
+    width: 35vh;
+    min-width: 0;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    padding-top: 1.5em;
+    border-bottom: #7A7A65 2px solid;
+    flex: 1;
+    overflow: scroll;
 }
+
+.ability-video{
+    width: 33%;
+}
+
+

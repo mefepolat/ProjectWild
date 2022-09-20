@@ -2,25 +2,45 @@
 
 <link rel="stylesheet" href="/stylesheets/detail.css">
 
-<div class="container">
 
-    <div class="grid">
+
+<div class="container">
+    <div class="champ-spells">
+        
+        <p><img class="spell-icon" src="http://ddragon.leagueoflegends.com/cdn/12.17.1/img/passive/<%= championDetails.passive.image.full %>" alt="">
+        P</p>
+   
+        <% for(let i = 0; i < championDetails.spells.length; i++) { %> 
+           
+            <p><img class="spell-icon" src="https://ddragon.leagueoflegends.com/cdn/12.17.1/img/spell/<%= championDetails.spells[i].image.full%>" alt="">
+        
+           <%= championDetails.spells[i].id.replace(championDetails.name, '') %> </p>
+       
+            <% } %> 
+    </div>
+
+    
+
+      
 
     <div class="champ-portrait">
     <img src="<%= imgSrc %>" alt="" class="champion-splash"> 
     <p class="champion-title"> <%= champion.name %> </p>
     <p class="champion-title"><%= champion.title %> </p>
-    </div>
     
-    <div class="champ-info">
+    
+    
         <p class="champ-blurb"><%= champion.blurb %> </p>
-    </div>
-
-    <div class="champ-spells">
-        <h3></h3>
-    </div>
-
+    
 </div>
+
+    <div class="ability-video">
+        <p>asdjsakd</p>
+    </div>
+
+   
+
+
 </div>
 
 
